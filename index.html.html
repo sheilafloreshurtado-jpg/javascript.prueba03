@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculos geometricos</title>
+</head>
+<body>
+
+<script>
+    // Mi Presentacion Personal - Prueba
+    document.write('Hola que hace?<br>');
+    document.write('Soy Sheila Adamari Flores Hurtado y tengo 24 años y estoy programando.<br>');
+    document.write('<br>');
+    
+    document.write('Calculos geometricos<br>');
+    document.write('<br>');
+    
+    // ============================================
+    // FIGURA 1: CIRCULO (radio)
+    // ============================================
+    document.write('--- CIRCULO ---<br>');
+    
+    var radio;
+    var areaCirculo;
+    var perimetroCirculo;
+    var PI = 3.1416;
+    
+    radio = prompt('Circulo: Dame el radio del circulo:','');
+    radio = parseFloat(radio);
+    
+    areaCirculo = PI * radio * radio;
+    perimetroCirculo = 2 * PI * radio;
+    
+    document.write('Radio: ' + radio + '<br>');
+    document.write('Area del circulo: ' + areaCirculo + '<br>');
+    document.write('Perimetro del circulo: ' + perimetroCirculo + '<br>');
+    document.write('<br>');
+    
+    // ============================================
+    // FIGURA 2: RECTANGULO (largo y ancho)
+    // ============================================
+    document.write('--- RECTANGULO ---<br>');
+    
+    var largoTriangulo;  
+    var anchoRectangulo;
+    var areaRectangulo;
+    var perimetroRectangulo;
+    
+    largoTriangulo = prompt('Rectangulo: Dame el largo del rectangulo:','');
+    anchoRectangulo = prompt('Rectangulo: Dame el ancho del rectangulo:','');
+    
+    largoTriangulo = parseFloat(largoTriangulo);
+    anchoRectangulo = parseFloat(anchoRectangulo);
+    
+    areaRectangulo = largoTriangulo * anchoRectangulo;
+    perimetroRectangulo = 2 * (largoTriangulo + anchoRectangulo);
+    
+    document.write('Largo: ' + largoTriangulo + '<br>');
+    document.write('Ancho: ' + anchoRectangulo + '<br>');
+    document.write('Area del rectangulo: ' + areaRectangulo + '<br>');
+    document.write('Perimetro del rectangulo: ' + perimetroRectangulo + '<br>');
+    document.write('<br>');
+    
+    // ============================================
+    // FIGURA 3: TRIANGULO RECTANGULO (cateto A y cateto B)
+    // ============================================
+    document.write('--- TRIANGULO RECTANGULO ---<br>');
+    
+    var catetoA;
+    var catetoB;
+    var areaTriangulo;
+    var hipotenusa;
+    var perimetroTriangulo;
+    
+    catetoA = prompt('Triangulo rectangulo: Dame el cateto A:','');
+    catetoB = prompt('Triangulo rectangulo: Dame el cateto B:','');
+    
+    catetoA = parseFloat(catetoA);
+    catetoB = parseFloat(catetoB);
+    
+    areaTriangulo = (catetoA * catetoB) / 2;
+    hipotenusa = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
+    perimetroTriangulo = catetoA + catetoB + hipotenusa;
+    
+    document.write('Cateto A: ' + catetoA + '<br>');
+    document.write('Cateto B: ' + catetoB + '<br>');
+    document.write('Area del triangulo rectangulo: ' + areaTriangulo + '<br>');
+    document.write('Perimetro del triangulo rectangulo: ' + perimetroTriangulo + '<br>');
+    
+</script>
+
+</body>
+</html>
